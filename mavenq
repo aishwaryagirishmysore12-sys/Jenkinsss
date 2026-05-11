@@ -1,0 +1,32 @@
+sudo apt update
+
+sudo apt install maven -y
+
+ mvn archetype:generate -DgroupId=com.example.app \
+-DartifactId=demo-app \
+-DarchetypeArtifactId=maven-archetype-quickstart \
+-DinteractiveMode=false
+
+rm -rf demo-app
+
+mvn archetype:generate -DgroupId=com.example.app \
+-DartifactId=demo-app \
+-DarchetypeArtifactId=maven-archetype-quickstart \
+-DinteractiveMode=false
+
+cd demo-app
+
+nano pom.xml
+nano src/main/java/com/example/app/App.java
+nano src/test/java/com/example/app/AppTest.java
+
+mvn clean install
+
+mvn exec:java -Dexec.mainClass="com.example.app.App"
+
+git add .
+git commit -m "Initial commit"
+git branch -M main
+git remote add origin https://github.com/aishwaryagirishmysore12-sys/maven.git
+
+
