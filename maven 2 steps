@@ -1,0 +1,12 @@
+gmail login app password name and create
+run jenkins
+wget https://get.jenkins.io/war-stable/latest/jenkins.war
+java -jar jenkins.war --httpPort=8090
+settings--system--extended email notification--cedentials --global--username is email--password app -- click tsl port 587--smtp.gmail.com
+default recipient ur email--save 
+settings--plugins -- avail plugin--search maven integration--check install --junit--
+tools --JDK17--CHECK --Maven3--check--save
+pipepline
+repo link credentials email
+uncheck lightweight save
+buildnow
