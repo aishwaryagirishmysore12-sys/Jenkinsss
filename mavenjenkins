@@ -33,3 +33,12 @@ pipeline {
         }
     }
 }
+
+
+if error 
+stage('Checkout') {
+    steps {
+        git branch: 'main',
+        url: 'https://github.com/AishwaryaGirish12/maven1.git'
+    }
+}
