@@ -1,0 +1,25 @@
+sudo apt update
+
+sudo apt install docker.io -y
+
+sudo systemctl start docker
+
+sudo systemctl enable docker
+
+docker --version
+
+sudo docker run hello-world
+  
+#create a new github repo and then clone that just add using create file use docker5_1
+  
+git clone https://github.com/AishwaryaGirish12/docker5_1.git
+
+cd docker5_1
+
+ls
+
+sudo docker build -t myfile-image .
+
+sudo docker images
+
+sudo docker run -p 5000:5000 myfile-image
